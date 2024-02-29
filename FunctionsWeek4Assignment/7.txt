@@ -1,0 +1,6 @@
+Q7: Explore:
+Can the same function name be used for different functions without any conflict?
+
+ans: Same funtion name can be used for different functions without conflict only if they either have different
+     data types for arguments or different number of arguments. Same function names cannot be used if functions 
+     differ only by their return type because the compiler would not then know which function is to be used.

@@ -1,0 +1,6 @@
+Q6: State True and False:
+1.A function may be called more than once from any other function
+2.It is necessary for a function to return some value.
+
+ans:  1:True: We can call as many times a function as we want from another function say main().
+      2:False: Not necessary as if a funtion has a return type void then it doesn't returns anything.
