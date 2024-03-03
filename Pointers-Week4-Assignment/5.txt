@@ -1,0 +1,9 @@
+Q5: Is the following program snippet correct?
+
+int a = 10, b = 20;
+int *ptr;
+*ptr = 5;
+
+ans: program snippet is syntactically correct but might result in runtime error such as Segmentation Fault. This is because ptr 
+     will have a garbage address which might even point to a location which does not belong to the program and hence might result in 
+     Segmentation Fault when we try to access it. Such pointers are also known as Wild Pointers
