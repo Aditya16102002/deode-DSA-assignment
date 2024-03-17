@@ -1,0 +1,18 @@
+6. Predict the output.
+int main()
+{
+int sub[50], i ;
+for ( i = 0 ; i <= 48 ; i++ ) ;
+{
+sub[i] = i ;
+cout<<sub[i]<<endl ;
+}
+return 0;
+}
+
+ans: 49
+     
+     With the semicolon remaining after the for loop, the loop increments i from 0 to 48, and then one additional time when i becomes 49. 
+     Since the semicolon terminates the loop without executing any statements inside it, i reaches the value of 49 after the loop.
+     After the loop completes, the code block following the loop is executed. Since the value of i is 49 at this point, sub[49] is 
+     assigned the value of 49, and then sub[49] is printed.
