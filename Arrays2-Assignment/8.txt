@@ -1,0 +1,13 @@
+8. Find the error.
+
+double getAverage(int arr[], int size);
+int main () {
+int balance[5] = {1000, 2, 3, 17, 50};
+double avg;
+avg = getAverage( balance[0], 5 ) ;
+cout << "Average value is: " << avg << endl;
+return 0;
+}
+
+ans: In the `main` function, `getAverage` function is called incorrectly. The `getAverage` function expects an array as its first 
+     argument, but balance[0] is not an array; it's the first element of the `balance` array.
