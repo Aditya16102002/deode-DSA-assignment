@@ -90,7 +90,7 @@ void setZeroesM3(vector<vector<int>> &matrix)
     // Step 2: if there is 0 in 0th row or col make the zerothRow or zerothCol variable True
     for (int i = 0; i < m; i++)
     {
-        if (matrix[i][0]) // checking for 0th col
+        if (matrix[i][0] == 0) // checking for 0th col
         {
             zerothCol = true; // true means there is a 0 in 0th col
             break;
