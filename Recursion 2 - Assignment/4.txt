@@ -1,0 +1,30 @@
+4. Predict the output:
+
+int fun(int n) 
+{
+    if (n <= 1) return 1;
+    if (n % 2 == 0) return fun(n / 2);
+    return fun(n / 2) + fun(n / 2 + 1);
+}
+
+ans: 
+For n = 0:
+fun(0) returns 1 (since n <= 1).
+
+For n = 1:
+fun(1) returns 1 (since n <= 1).
+
+For n = 2:
+fun(2) returns fun(1) which is 1 (since n is even and fun(1) returns 1).
+
+For n = 3:
+fun(3) returns fun(1) + fun(2) which is 1 + 1 = 2 (since n is odd, fun(1) and fun(2) both return 1).
+
+For n = 4:
+fun(4) returns fun(2) which is 1 (since n is even and fun(2) returns 1).
+
+fun(5) = 3
+fun(6) = 1
+fun(7) = 3
+fun(8) = 1
+fun(9) = 4
